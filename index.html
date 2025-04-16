@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TASC Towers - Vision, Mission & Values</title>
+  <style>
+    body { font-family: Segoe UI, sans-serif; max-width: 800px; margin: 20px auto; }
+    .accordion { background-color: #eee; padding: 15px; border: none; width: 100%; text-align: left; font-size: 18px; cursor: pointer; }
+    .accordion:after { content: '+'; float: right; }
+    .accordion.active:after { content: '-'; }
+    .panel { display: none; padding: 0 15px; background: #fff; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+
+<h2>TASC Towers Iraq</h2>
+
+<button class="accordion">Our Vision</button>
+<div class="panel">
+  <p>To be the leading provider of telecommunication tower services in Iraq, setting the standard for excellence and innovation in the industry.</p>
+</div>
+
+<button class="accordion">Our Mission</button>
+<div class="panel">
+  <p>To provide reliable, scalable, and energy-efficient telecom infrastructure that reduces operational costs for our partners, accelerates network expansion, and promotes environmental responsibility and government vision through the integration of renewable energy solutions and shared infrastructure models.</p>
+</div>
+
+<button class="accordion">Our Core Values</button>
+<div class="panel">
+  <ul>
+    <li><strong>Respect:</strong> We cultivate professionalism, inclusivity, and mutual respect in every interaction.</li>
+    <li><strong>Trust:</strong> We uphold integrity, transparency, and reliability across all operations.</li>
+    <li><strong>Collaboration:</strong> We work closely with partners to drive shared success in telecom.</li>
+    <li><strong>Excellence:</strong> We continuously improve to deliver superior infrastructure solutions.</li>
+  </ul>
+</div>
+
+<script>
+  document.querySelectorAll('.accordion').forEach(button => {
+    button.addEventListener('click', function () {
+      this.classList.toggle('active');
+      const panel = this.nextElementSibling;
+      panel.style.display = (panel.style.display === "block") ? "none" : "block";
+    });
+  });
+</script>
+
+</body>
+</html>
