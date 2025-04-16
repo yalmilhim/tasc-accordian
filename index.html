@@ -1,49 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TASC Towers - Vision, Mission & Values</title>
+  <meta charset="UTF-8" />
+  <title>About Us - TASC Towers Iraq</title>
   <style>
-    body { font-family: Segoe UI, sans-serif; max-width: 800px; margin: 20px auto; }
-    .accordion { background-color: #eee; padding: 15px; border: none; width: 100%; text-align: left; font-size: 18px; cursor: pointer; }
-    .accordion:after { content: '+'; float: right; }
-    .accordion.active:after { content: '-'; }
-    .panel { display: none; padding: 0 15px; background: #fff; border: 1px solid #ccc; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: left;
+      color: #333;
+      background-color: transparent;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+    .accordion {
+      background-color: transparent;
+      color: #333;
+      cursor: pointer;
+      padding: 16px;
+      margin: 10px 0;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      transition: 0.4s;
+      border-left: 4px solid #0078d4;
+    }
+    .accordion:after {
+      content: '+';
+      float: right;
+    }
+    .accordion.active:after {
+      content: '-';
+    }
+    .panel {
+      padding: 0 16px;
+      display: none;
+      background-color: transparent;
+      overflow: hidden;
+      border-left: 4px solid #0078d4;
+      margin-bottom: 10px;
+    }
+    .panel p, .panel ul, .panel li {
+      margin: 15px 0;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
 
-<h2>TASC Towers Iraq</h2>
+  <h1>About Us</h1>
 
-<button class="accordion">Our Vision</button>
-<div class="panel">
-  <p>To be the leading provider of telecommunication tower services in Iraq, setting the standard for excellence and innovation in the industry.</p>
-</div>
+  <button class="accordion">Our Vision</button>
+  <div class="panel">
+    <p>To be the leading provider of telecommunication tower services in Iraq, setting the standard for excellence and innovation in the industry.</p>
+  </div>
 
-<button class="accordion">Our Mission</button>
-<div class="panel">
-  <p>To provide reliable, scalable, and energy-efficient telecom infrastructure that reduces operational costs for our partners, accelerates network expansion, and promotes environmental responsibility and government vision through the integration of renewable energy solutions and shared infrastructure models.</p>
-</div>
+  <button class="accordion">Our Mission</button>
+  <div class="panel">
+    <p>To provide reliable, scalable, and energy-efficient telecom infrastructure that reduces operational costs for our partners, accelerates network expansion, and promotes environmental responsibility and government vision through the integration of renewable energy solutions and shared infrastructure models.</p>
+  </div>
 
-<button class="accordion">Our Core Values</button>
-<div class="panel">
-  <ul>
-    <li><strong>Respect:</strong> We cultivate professionalism, inclusivity, and mutual respect in every interaction.</li>
-    <li><strong>Trust:</strong> We uphold integrity, transparency, and reliability across all operations.</li>
-    <li><strong>Collaboration:</strong> We work closely with partners to drive shared success in telecom.</li>
-    <li><strong>Excellence:</strong> We continuously improve to deliver superior infrastructure solutions.</li>
-  </ul>
-</div>
+  <button class="accordion">Our Core Values</button>
+  <div class="panel">
+    <p>At TASC Towers Iraq, our corporate culture is built on four fundamental values that guide our decisions, operations, and relationships:</p>
 
-<script>
-  document.querySelectorAll('.accordion').forEach(button => {
-    button.addEventListener('click', function () {
-      this.classList.toggle('active');
-      const panel = this.nextElementSibling;
-      panel.style.display = (panel.style.display === "block") ? "none" : "block";
+    <p><strong>1. Respect</strong></p>
+    <p>We cultivate an environment of professionalism, inclusivity, and mutual respect, ensuring that our employees, clients, and partners feel valued and heard in every interaction.</p>
+
+    <p><strong>2. Trust</strong></p>
+    <p>We uphold the highest standards of integrity, transparency, and reliability in all our operations, fostering strong and lasting relationships with stakeholders across the telecom ecosystem.</p>
+
+    <p><strong>3. Collaboration</strong></p>
+    <p>We believe in the power of teamwork and open communication to drive innovation and efficiency, working closely with operators and partners to create shared success in Iraq's evolving telecom landscape.</p>
+
+    <p><strong>4. Excellence</strong></p>
+    <p>We are committed to operational excellence in everything we do, from tower deployment and maintenance to customer service, continuously improving our processes to deliver superior infrastructure solutions that exceed expectations.</p>
+  </div>
+
+  <script>
+    const acc = document.querySelectorAll('.accordion');
+    acc.forEach(button => {
+      button.addEventListener('click', function () {
+        this.classList.toggle('active');
+        const panel = this.nextElementSibling;
+        panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
+      });
     });
-  });
-</script>
+  </script>
 
 </body>
 </html>
