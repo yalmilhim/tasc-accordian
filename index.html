@@ -10,44 +10,50 @@
       margin: 40px auto;
       padding: 0 20px;
       text-align: left;
-      color: #333;
+      color: white;
       background-color: transparent;
     }
+
     h1 {
       font-size: 32px;
       margin-bottom: 30px;
-      border-bottom: 2px solid #ddd;
+      border-bottom: 2px solid white;
       padding-bottom: 10px;
     }
+
     .accordion {
       background-color: transparent;
-      color: #333;
+      color: white;
       cursor: pointer;
       padding: 16px;
       margin: 10px 0;
       width: 100%;
-      border: none;
+      border: 1px solid white;
       text-align: left;
       outline: none;
       font-size: 18px;
       transition: 0.4s;
-      border-left: 4px solid #0078d4;
     }
+
     .accordion:after {
       content: '+';
       float: right;
     }
+
     .accordion.active:after {
       content: '-';
     }
+
     .panel {
       padding: 0 16px;
       display: none;
       background-color: transparent;
       overflow: hidden;
-      border-left: 4px solid #0078d4;
+      border-left: 2px solid white;
       margin-bottom: 10px;
+      color: white;
     }
+
     .panel p, .panel ul, .panel li {
       margin: 15px 0;
       line-height: 1.6;
